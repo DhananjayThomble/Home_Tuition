@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "86545791742",
+    "firebase_url": "https://home-tuition-762f4.firebaseio.com",
+    "project_id": "home-tuition-762f4",
+    "storage_bucket": "home-tuition-762f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86545791742:android:be3927dbdfa9fe9f7e83af",
+        "android_client_info": {
+          "package_name": "com.jay.hometuition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86545791742-8smsdobai0850a8vntk6i747mmgd6qb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqtm8TBwqgE0WC_UkKMMP7N39-bEcj3OE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86545791742-8smsdobai0850a8vntk6i747mmgd6qb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
