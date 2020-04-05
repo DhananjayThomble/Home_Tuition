@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<resources>-->
+<!--    <color name="colorPrimary">#FFFFFF</color>-->
+<!--    <color name="colorPrimaryDark">#000</color>-->
+<!--    <color name="colorAccent">#11CFC5</color>-->
+<!--    <color name="themeColor">#11CFC5</color>-->
+
+<!--    &lt;!&ndash;normal colors&ndash;&gt;-->
+<!--    <color name="darkTextColor">#020000</color>-->
+
+
+<!--    &lt;!&ndash;colors for light mode&ndash;&gt;-->
+<!--    <color name="contentTextColor">#020000</color>-->
+<!--    <color name="register_bk_color">#11CFC5</color>-->
+<!--    <color name="login_bk_color">#fff</color>-->
+<!--    <color name="whiteTextColor">#fff</color>-->
+<!--&lt;!&ndash;    <color name="primaryTextColor">#ffffff</color>&ndash;&gt;-->
+
+
+<!--    &lt;!&ndash;colors for crop activity&ndash;&gt;-->
+<!--    &lt;!&ndash;<color name="ucrop_color_toolbar">@color/teal_500</color>&ndash;&gt;-->
+<!--    &lt;!&ndash;<color name="ucrop_color_statusbar">@color/teal_700</color>&ndash;&gt;-->
+<!--    &lt;!&ndash;<color name="ucrop_color_widget_active">@color/teal_500</color>&ndash;&gt;-->
+
+<!--    <color name="buttonColor">#ffffff</color>-->
+<!--    <color name="black_transparent">#14000000</color>-->
+<!--    <color name="black_transparent_image">#46000000</color>-->
+<!--    <color name="start_color">#ff2d9a59</color>-->
+<!--    <color name="end_color">#ff23729a</color>-->
+<!--    <color name="teal">#009090</color>-->
+<!--    <color name="color_log_in">#94019c8f</color>-->
+<!--    <color name="color_sign_up">#93303f9f</color>-->
+<!--    <color name="color_grey">#cfcfcf</color>-->
+<!--    <color name="primaryColor">#0a2141</color>-->
+<!--    <color name="primaryLightColor">#38486c</color>-->
+<!--    <color name="primaryDarkColor">#00001b</color>-->
+<!--    <color name="secondaryColor">#517492</color>-->
+<!--    <color name="secondaryLightColor">#80a3c2</color>-->
+<!--    <color name="secondaryDarkColor">#224964</color>-->
+<!--    <color name="primaryTextColor">#000000</color>-->
+<!--    <color name="secondaryTextColor">#000000</color>-->
+
+<!--</resources>-->
+
+
+<!--                                Login Acti               -->
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#000</color>
@@ -17,11 +62,22 @@
     <color name="primaryTextColor">#11CFC5</color>
 
 
-    <!--colors for crop activity-->
-    <!--<color name="ucrop_color_toolbar">@color/teal_500</color>-->
-    <!--<color name="ucrop_color_statusbar">@color/teal_700</color>-->
-    <!--<color name="ucrop_color_widget_active">@color/teal_500</color>-->
-
-
-
+<!--    tutor-->
+    <color name="buttonColor">#ffffff</color>
+    <color name="black_transparent">#14000000</color>
+    <color name="black_transparent_image">#46000000</color>
+    <color name="start_color">#ff2d9a59</color>
+    <color name="end_color">#ff23729a</color>
+    <color name="teal">#009090</color>
+    <color name="color_log_in">#94019c8f</color>
+    <color name="color_sign_up">#93303f9f</color>
+    <color name="color_grey">#cfcfcf</color>
+    <color name="primaryColor">#0a2141</color>
+    <color name="primaryLightColor">#38486c</color>
+    <color name="primaryDarkColor">#00001b</color>
+    <color name="secondaryColor">#517492</color>
+    <color name="secondaryLightColor">#80a3c2</color>
+    <color name="secondaryDarkColor">#224964</color>
+    <color name="primaryTextColor2">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
 </resources>

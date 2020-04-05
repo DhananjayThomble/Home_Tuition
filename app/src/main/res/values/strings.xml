@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ModernLogin</string>
+    <string name="app_name">Home Tuition</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
 
@@ -8,5 +8,54 @@
     <!--facebook login ends-->
 
     <!--error messages-->
+    <string name="selectCity">Select Your City</string>
+    <string name="selectLearner">How many Students</string>
+    <string name="enterStudentD">Enter the details of student</string>
+    <string name="btnNext">Next</string>
+    <string name="CitySurat">Surat</string>
+    <string name="City_Ah">Ahmedabad</string>
+    <string name="CityPune">Pune</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="many">many</string>
+
+    <string name="sName">Name of student</string>
+    <string name="sGender">Gender</string>
+    <string name="sGender1">Male</string>
+    <string name="sGender2">Female</string>
+    <string name="sClass">Class</string>
+    <string name="sSubject">Subject</string>
+    <string name="sSchool">School(Optional)</string>
+    <string name="sBoard">Board</string>
+    <string name="sMarks">Marks in Last Class</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="marks">
+        <item>Less than 30%</item>
+        <item>30% - 40%</item>
+        <item>40% - 50%</item>
+        <item>50% - 60%</item>
+        <item>60% - 70%</item>
+        <item>70% - 80%</item>
+        <item>80% - 90%</item>
+        <item>90% - 100%</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
 
 </resources>

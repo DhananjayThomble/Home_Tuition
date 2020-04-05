@@ -43,12 +43,16 @@
                 android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/darkTextColor"
+                android:textColor="@color/contentTextColor"
                 android:ems="10"
                 android:hint="@string/login_email_hint"
                 android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/txtPass"
+                android:textColorHint="@color/darkTextColor"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

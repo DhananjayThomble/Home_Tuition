@@ -67,7 +67,7 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin">
                         <EditText
-                            android:id="@+id/txtEmail"
+                            android:id="@+id/editTextEmail"
                             style="@style/modifiedEditText"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
@@ -90,9 +90,21 @@
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin">
                         <EditText
-                            android:id="@+id/txtPass"
+                            android:id="@+id/editTextPass"
                             style="@style/modifiedEditText"
                             android:hint="@string/login_password_hint"
+                            android:maxLines="1"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputPassword2"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/editTextPass2"
+                            style="@style/modifiedEditText"
+                            android:hint="Confirm Password"
                             android:maxLines="1"
                             android:inputType="textPassword"/>
                     </com.google.android.material.textfield.TextInputLayout>
@@ -116,7 +128,7 @@
                         android:textSize="17sp"
                         android:text="Already have an account?"
                         android:layout_marginTop="@dimen/loginViewsMargin"
-                        android:onClick="onLoginClick"/>
+                        android:onClick="onLogicClick"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -188,6 +200,6 @@
         android:src="@drawable/ic_back_img"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
-        android:onClick="onLoginClick"
+        android:onClick="onLogicClick"
         android:adjustViewBounds="false"/>
 </RelativeLayout>

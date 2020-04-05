@@ -66,19 +66,20 @@ public class LoginActivity extends AppCompatActivity {
                             currentUser = mAuth.getCurrentUser();
 //                            updateUI(currentUser);
 //                            students.setmFirebaseUser(currentUser.getUid());
-                            new CountDownTimer(3000,1000){
+                            Toast.makeText(LoginActivity.this,"You will be Redirected to Dashboard",Toast.LENGTH_SHORT).show();
+
+                            new CountDownTimer(2000,1000){
 
                                 @Override
                                 public void onTick(long millisUntilFinished) {
-                                    Toast.makeText(LoginActivity.this,"You will be Redirected to Dashboard",Toast.LENGTH_SHORT).show();
                                 }
 
                                 @Override
                                 public void onFinish() {
-//                                    //TODO goto which class
-//                                    Intent intent = new Intent(ActivityLogin.this,Rlearners.class);
-//                                    finish();
-//                                    startActivity(intent);
+//                                    //
+                                    Intent intent = new Intent(LoginActivity.this,ActivityDashboard.class);
+                                    finish();
+                                    startActivity(intent);
                                 }
                             }.start();
                         }
