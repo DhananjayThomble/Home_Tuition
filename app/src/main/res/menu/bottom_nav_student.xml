@@ -7,10 +7,10 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/nav_favourite"
+        android:id="@+id/nav_tutor"
         android:icon="@drawable/ic_favorite_teal_24dp"
         android:iconTint="@color/secondaryTextColor"
-        android:title="My Tutors"/>
+        android:title="Find Tutors"/>
 
 <!--    <item-->
 <!--        android:id="@+id/nav_search"-->
@@ -19,7 +19,7 @@
 <!--        android:title="Search"/>-->
 
     <item
-        android:id="@+id/nav_chats"
+        android:id="@+id/nav_exit"
         android:icon="@drawable/ic_exit_to_app_teal_24dp"
         android:iconTint="@color/secondaryTextColor"
         android:title="Exit"/>
