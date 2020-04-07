@@ -37,4 +37,5 @@ dependencies {
     //animated button for login
     implementation 'br.com.simplepass:loading-button-android:2.2.0'
     implementation 'com.google.firebase:firebase-firestore:21.4.2'
+
 }

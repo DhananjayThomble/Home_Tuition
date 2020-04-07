@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".StudDetail"
-            android:theme="@style/Theme.AppCompat"/>
-        <activity android:name=".StudentActivity"
-            android:theme="@style/Theme.Design.Light"/>
-
-        <!-- <activity android:name=".MainActivity" /> -->
+        <activity android:name=".ForgetPass"></activity>
+        <activity
+            android:name=".StudDetail"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".StudentActivity"
+            android:theme="@style/Theme.Design.Light" /> <!-- <activity android:name=".MainActivity" /> -->
         <activity
             android:name=".ActivityDashboard"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
