@@ -5,6 +5,7 @@
     <dimen name="loginViewsMargin">20dp</dimen>
     <!--start activity-->
 
+    <dimen name="SizeofFont">25sp</dimen>
     <!--shimmer dimes-->
 
 </resources>

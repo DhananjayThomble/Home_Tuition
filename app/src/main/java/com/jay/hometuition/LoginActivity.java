@@ -37,6 +37,15 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         btnSubmit = findViewById(R.id.cirRegisterButton2);
 
+        //Check whether the user already logged in or not
+        currentUser = mAuth.getInstance().getCurrentUser();
+        if (currentUser != null){
+            //Directly go to dashboard
+            Intent intent = new Intent(LoginActivity.this,ActivityDashboard.class);
+            finish();
+            startActivity(intent);
+        }
+
         students = new Students();
 
         //for changing status bar icon colors

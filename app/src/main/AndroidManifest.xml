@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgetPass"></activity>
+        <activity android:name=".StudDetailView"></activity>
+        <activity android:name="tutor.TutorActivity" />
+        <activity android:name=".ForgetPass" />
         <activity
             android:name=".StudDetail"
             android:theme="@style/Theme.AppCompat" />
