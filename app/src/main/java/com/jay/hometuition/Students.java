@@ -2,12 +2,11 @@ package com.jay.hometuition;
 
 public class Students {
 
-    private static String mCity,mName,mGender,mClass,mSubject,mSchool,mBoard,mMarks,mStatus;
+    private static String mCity,mName,mGender,mClass,mSubject,mSchool,mBoard,mMarks;
     private static int mLearners;
     private static String firebaseUser;
 
     //Setters
-    public void setmStatus(String mStatus){ Students.mStatus = mStatus; }
     public void setmFirebaseUser(String mFirebaseUser){ Students.firebaseUser = mFirebaseUser; }
     public void setmCity(String mCity) {
         Students.mCity = mCity;
@@ -46,7 +45,6 @@ public class Students {
     }
 
     //Getters
-    public String getmStatus() { return mStatus; }
     public String getFirebaseUser(){ return firebaseUser; }
     public String getmCity() {
         return mCity;
