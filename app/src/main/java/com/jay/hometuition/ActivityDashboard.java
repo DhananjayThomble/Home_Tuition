@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ActivityDashboard extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,9 +32,6 @@ public class ActivityDashboard extends AppCompatActivity implements View.OnClick
         }
         else if ( v == btnTutor ){
             //Goto tutor act
-//            Intent intent = new Intent(ActivityDashboard.this, TutorActivity.class);
-//            startActivity(intent);
-
         }
     }
 }
