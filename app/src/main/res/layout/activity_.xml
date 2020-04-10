@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:text="Student Information"
+        android:textColor="@color/secondaryTextColor"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="136dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        android:src="@drawable/clip_person_foreground"
+        />
+
+    <TextView
+        android:id="@+id/txtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="92dp"
+        android:text="TextView"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/SizeofFont"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.466">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Class"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="TextView"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="Gender"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="School"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="TextView"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="Board"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="TextView"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="Marks"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtMarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="TextView"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="City"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/SizeofFont" />
+
+                    <TextView
+                        android:id="@+id/txtCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondaryTextColor"
+                        android:text="TextView"
+                        android:textSize="@dimen/SizeofFont" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

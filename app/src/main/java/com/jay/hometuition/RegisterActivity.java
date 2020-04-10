@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -36,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser currentUser;
     private CircularProgressButton btnSubmit;
+    private Spinner mType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
         mPass2 = findViewById(R.id.editTextPass2);
         btnSubmit = findViewById(R.id.cirRegisterButton);
         mAuth = FirebaseAuth.getInstance();
-
+        mType = findViewById(R.id.spinnerTypeAcc);
 
     }
 
@@ -80,14 +82,6 @@ public class RegisterActivity extends AppCompatActivity {
 //            window.setStatusBarColor(Color.TRANSPARENT);
             window.setStatusBarColor(getResources().getColor(R.color.register_bk_color));
         }
-    }
-
-    // Validate User Input
-    private boolean isValid(String mEmail, String mPass1, String mPass2) {
-        if (mEmail != null && mPass1 != null && mPass2 != null) {
-            return mPass1.equals(mPass2);
-        }
-        return false;
     }
 
     // Create New User
@@ -122,6 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
         user.put("id", id);
         user.put("name", mName.getText().toString());
         user.put("mobile", mMobile.getText().toString());
+        user.put("type",mType.getSelectedItem().toString());
 
         // Access a Cloud Firestore instance from your Activity
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -134,6 +129,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onSuccess(DocumentReference documentReference) {
                         Log.d("test", "DocumentSnapshot added with ID: " + documentReference.getId());
                         Toast.makeText(RegisterActivity.this, "Data Saved", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

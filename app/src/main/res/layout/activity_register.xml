@@ -109,6 +109,15 @@
                             android:inputType="textPassword"/>
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spinnerTypeAcc"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/type"
+                        android:padding="5dp"
+                        android:popupElevation="20dp"
+                        android:spinnerMode="dropdown" />
+
                     <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
                         android:id="@+id/cirRegisterButton"
                         style="@style/loginButton"

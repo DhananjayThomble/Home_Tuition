@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgetPass"></activity>
+        <activity android:name=".TutorEdit" android:theme="@style/Theme.AppCompat" ></activity>
+        <activity
+            android:name=".TutorActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".ForgetPass" />
+        <activity
+            android:name=".Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".StudDetail"
             android:theme="@style/Theme.AppCompat" />

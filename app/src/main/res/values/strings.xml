@@ -47,6 +47,18 @@
         <item>80% - 90%</item>
         <item>90% - 100%</item>
     </string-array>
+
+    <string-array name="city">
+        <item>Surat</item>
+        <item>Ahmedabad</item>
+        <item>Pune</item>
+    </string-array>
+
+   <string-array name="type">
+       <item>Student</item>
+       <item>Tutor</item>
+   </string-array>
+
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

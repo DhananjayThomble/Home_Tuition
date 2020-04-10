@@ -7,10 +7,10 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/nav_tutor"
-        android:icon="@drawable/ic_favorite_teal_24dp"
+        android:id="@+id/nav_addData"
+        android:icon="@drawable/ic_add_box_black_24dp"
         android:iconTint="@color/secondaryTextColor"
-        android:title="Find Tutors"/>
+        android:title="Add Data"/>
 
 <!--    <item-->
 <!--        android:id="@+id/nav_search"-->

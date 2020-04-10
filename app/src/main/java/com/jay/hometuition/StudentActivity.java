@@ -27,12 +27,10 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class StudentActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
     private TextView textView;
     private Button btnRemove;
     private BottomNavigationView bottomNav;
     private FirebaseFirestore db;
-    private DocumentReference docRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +102,7 @@ public class StudentActivity extends AppCompatActivity {
 
     private void getStudentInfo() {
         db.collection("students")
-                .whereEqualTo("status", "1")
+                .whereEqualTo("id", mAuth.getCurrentUser().getUid())
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -145,15 +143,13 @@ public class StudentActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.nav_home:
                     break;
-                case R.id.nav_tutor:
+                case R.id.nav_addData:
                     Intent gotoStudDetails = new Intent(StudentActivity.this, StudDetail.class);
                     startActivity(gotoStudDetails);
                     break;
 
-//                case R.id.nav_exit:
-//                    selectedFragment = new ChatFragment();
-//                    break;
-
+                case R.id.nav_exit:
+                   finish();
             }
 
             return true;
